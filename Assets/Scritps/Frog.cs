@@ -24,8 +24,7 @@ public class Frog : MonoBehaviour
     }
 
     private void MovimentoSapo()
-    {
-        Vector3 dir = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
+    {        
         transform.position = Vector3.MoveTowards(transform.position, target, velocidadeFrog * Time.deltaTime);
 
         if (transform.position != target)
